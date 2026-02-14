@@ -315,7 +315,7 @@
         </div>
 
         <div class="nav-buttons">
-            <button class="btn btn-pink" id="btnSendWish">✨ send a wish for her</button>
+            <button class="btn btn-pink" id="btnSendWish">♡send a wish for her</button>
             <button class="btn btn-outline" id="btnSeeWishes">💝 see wishes</button>
         </div>
 
@@ -379,7 +379,7 @@
 
         // Fungsi untuk memuat semua ucapan dari Supabase
         async function loadWishes() {
-            wishesList.innerHTML = '<div class="loading">Memuat ucapan-ucapan indah...</div>';
+            wishesList.innerHTML = '<div class="loading">memuat ucapan..</div>';
             
             try {
                 const response = await fetch(`${SUPABASE_URL}/rest/v1/ucapan?select=*&order=created_at.desc`, {
@@ -471,7 +471,7 @@
                 document.getElementById('nama').value = '';
                 document.getElementById('pesan').value = '';
                 
-                showMessage('formMessage', 'Ucapanmu berhasil dikirim! Terima kasih 🎂', 'success');
+                showMessage('formMessage', 'Ucapanmu berhasil dikirim! Thank youu', 'success');
                 loadWishes();
                 
                 setTimeout(() => {
